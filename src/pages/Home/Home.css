@@ -1,0 +1,24 @@
+.home-hero {
+  height: 85vh;
+  background: #0b1f3a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-overlay {
+  text-align: center;
+  color: white;
+}
+
+.home-overlay h1 {
+  font-size: 60px;
+}
+
+.home-about {
+  padding: 80px 10%;
+}
+
+.home-about h2 {
+  color: #0b1f3a;
+}

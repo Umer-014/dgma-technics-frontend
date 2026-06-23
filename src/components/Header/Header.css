@@ -1,0 +1,43 @@
+.header {
+  background: #0B1F3A;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact-btn {
+  background: #D4AF37;
+  color: black;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 5px;
+  cursor: pointer;
+}
