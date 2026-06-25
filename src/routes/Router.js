@@ -8,6 +8,7 @@ import Products from "../pages/Products/Products";
 import Downloads from "../pages/Downloads/Downloads";
 import News from "../pages/News/News";
 import Contact from "../pages/Contact/Contact";
+import Compliance from "../pages/Compliance/Compliance";
 
 function Router() {
   return (
@@ -21,6 +22,7 @@ function Router() {
         <Route path="/downloads" element={<Downloads />} />
         <Route path="/news" element={<News />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/compliance" element={<Compliance />} />
       </Routes>
     </BrowserRouter>
   );
