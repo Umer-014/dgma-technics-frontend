@@ -228,47 +228,60 @@
 }
 
 .capability-image {
-  height: 265px;
+  height: 365px;
   position: relative;
   overflow: hidden;
   background-size: cover;
   background-position: center;
 }
 
+
+
+/* IMAGE AT TOP */
+
 .land-image {
-  background:
-    linear-gradient(rgba(4, 15, 8, 0.2), rgba(4, 15, 8, 0.75)),
-    url("../../assets/land-hero..png");
+  background-image: url("../../assets/land-hero..png");
 }
 
 .aerospace-image {
-  background:
-    linear-gradient(rgba(4, 15, 8, 0.2), rgba(4, 15, 8, 0.75)),
-    url("../../assets/aerospace-hero.png");
+  background-image: url("../../assets/aerospace-hero.png");
 }
 
 .naval-image {
-  background:
-    linear-gradient(rgba(4, 15, 8, 0.2), rgba(4, 15, 8, 0.75)),
-    url("../../assets/naval-hero.png");
+  background-image: url("../../assets/naval-hero.png");
 }
 
 .electronics-image {
-  background:
-    linear-gradient(rgba(4, 15, 8, 0.2), rgba(4, 15, 8, 0.75)),
-    url("../../assets/electronics-hero.png");
+  background-image: url("../../assets/electronics-hero.png");
+}
+
+/* SMALL DARK LAYER ONLY FOR TEXT ON IMAGE */
+
+
+
+/* TEXT ON TOP OF IMAGE */
+
+.capability-image-top,
+.capability-image-bottom {
+  position: absolute;
+  left: 24px;
+  right: 24px;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.capability-image-top {
+  top: 21px;
+}
+
+.capability-image-bottom {
+  bottom: 20px;
 }
 
 /* If image is not added yet, this keeps a premium background */
-.capability-image::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(circle at 70% 35%, rgba(29, 122, 57, 0.42), transparent 30%),
-    linear-gradient(135deg, transparent 49.5%, rgba(201, 164, 75, 0.18) 50%, transparent 50.5%);
-  background-size: auto, 90px 90px;
-}
+
 
 .capability-image-overlay {
   position: absolute;
@@ -318,9 +331,7 @@
   font-weight: 400;
 }
 
-.capability-card-content {
-  padding: 28px;
-}
+
 
 .capability-subtitle {
   margin: 0 0 10px;
@@ -332,7 +343,7 @@
 }
 
 .capability-card-content h3 {
-  margin: 0;
+
   font-family: Georgia, "Times New Roman", serif;
   font-size: 30px;
   font-weight: 500;

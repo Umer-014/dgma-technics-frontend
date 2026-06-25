@@ -108,15 +108,16 @@ function Products() {
             <div>
               <p className="products-label">Capability Overview</p>
               <h2>
-                A structured route to complex engineering and industrial sectors.
+                A structured route to complex engineering and industrial
+                sectors.
               </h2>
             </div>
 
             <div className="products-intro-text">
               <p>
-                Each capability area below provides a high-level overview of
-                the relevant industrial ecosystem and the types of engagement
-                DGMA can help coordinate.
+                Each capability area below provides a high-level overview of the
+                relevant industrial ecosystem and the types of engagement DGMA
+                can help coordinate.
               </p>
 
               <p>
@@ -137,43 +138,19 @@ function Products() {
                 <h2>Choose your sector of interest.</h2>
               </div>
 
-              <span className="products-directory-count">
-                04 Core Sectors
-              </span>
+              <span className="products-directory-count">04 Core Sectors</span>
             </div>
 
             <div className="products-capability-grid">
               {capabilities.map((capability) => (
-                <article className="products-capability-card" key={capability.number}>
-                  <div className={`capability-image ${capability.imageClass}`}>
-                    <div className="capability-image-overlay"></div>
-
-                    <div className="capability-image-top">
-                      <span>{capability.number}</span>
-                      <p>DGMA Capability</p>
-                    </div>
-
-                    <div className="capability-image-bottom">
-                      <span>Explore Sector</span>
-                      <b>↗</b>
-                    </div>
-                  </div>
-
+                <article
+                  className="products-capability-card"
+                  key={capability.number}
+                >
+                  <div
+                    className={`capability-image ${capability.imageClass}`}
+                  ></div>
                   <div className="capability-card-content">
-                    <p className="capability-subtitle">{capability.subtitle}</p>
-
-                    <h3>{capability.title}</h3>
-
-                    <p className="capability-description">
-                      {capability.description}
-                    </p>
-
-                    <div className="capability-tags">
-                      {capability.tags.map((tag) => (
-                        <span key={tag}>{tag}</span>
-                      ))}
-                    </div>
-
                     <Link to={capability.link} className="capability-card-link">
                       View Capability Area <span>→</span>
                     </Link>
@@ -191,7 +168,9 @@ function Products() {
 
             <div>
               <p className="products-label">Information Approach</p>
-              <h2>High-level public information. Detailed engagement by request.</h2>
+              <h2>
+                High-level public information. Detailed engagement by request.
+              </h2>
 
               <p>
                 Public pages are designed to introduce broad sectors,
@@ -218,7 +197,10 @@ function Products() {
 
             <div className="products-engagement-grid">
               {engagementPoints.map((point) => (
-                <article className="products-engagement-card" key={point.number}>
+                <article
+                  className="products-engagement-card"
+                  key={point.number}
+                >
                   <span>{point.number}</span>
                   <div></div>
                   <h3>{point.title}</h3>
@@ -238,8 +220,8 @@ function Products() {
             <h2>Tell us which capability area you want to explore.</h2>
 
             <p>
-              Submit your organisation details and high-level requirement.
-              DGMA will review the appropriate next step.
+              Submit your organisation details and high-level requirement. DGMA
+              will review the appropriate next step.
             </p>
 
             <Link to="/contact" className="products-primary-button">
