@@ -1,11 +1,16 @@
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
+import PageTransition from "../PageTransition/PageTransition";
 
 const Layout = ({ children }) => {
   return (
     <>
       <Header />
-      <main>{children}</main>
+
+      <PageTransition>
+        <main>{children}</main>
+      </PageTransition>
+
       <Footer />
     </>
   );
