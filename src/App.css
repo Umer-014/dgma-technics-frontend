@@ -5,16 +5,19 @@ body {
   width: 100%;
   min-height: 100%;
   overflow-x: hidden;
-  background: #0b1f3a;
+  background: #07110b;
+  color: #ffffff;
+  font-family: "Inter", Arial, sans-serif;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
 #root {
   width: 100%;
   min-height: 100vh;
-  overflow-x: hidden;
-  background: #0b1f3a;
+  background: #07110b;
 }
