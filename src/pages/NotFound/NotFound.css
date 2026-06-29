@@ -1,0 +1,151 @@
+.notfound-page{
+    min-height:100vh;
+    position:relative;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#07110b;
+    color:white;
+}
+
+.nf-container{
+    width:min(700px,90%);
+    text-align:center;
+    position:relative;
+    z-index:2;
+}
+
+.nf-grid{
+    position:absolute;
+    inset:0;
+    opacity:.12;
+    background-image:
+    linear-gradient(rgba(201,164,75,.18) 1px,transparent 1px),
+    linear-gradient(90deg,rgba(201,164,75,.18) 1px,transparent 1px);
+    background-size:70px 70px;
+}
+
+.nf-circle{
+    position:absolute;
+    border-radius:50%;
+    border:1px solid rgba(201,164,75,.25);
+}
+
+.circle-1{
+    width:700px;
+    height:700px;
+    right:-200px;
+    top:-120px;
+}
+
+.circle-2{
+    width:450px;
+    height:450px;
+    right:-60px;
+    top:60px;
+    border-color:rgba(29,122,57,.5);
+}
+
+.nf-code{
+    display:block;
+    font-size:170px;
+    font-weight:900;
+    color:#c9a44b;
+    line-height:1;
+    letter-spacing:5px;
+}
+
+.nf-label{
+    margin-top:15px;
+    color:#6db07e;
+    letter-spacing:3px;
+    font-size:13px;
+    font-weight:700;
+}
+
+.notfound-page h1{
+    margin-top:25px;
+    font-family:Georgia,serif;
+    font-size:58px;
+    font-weight:500;
+    line-height:1.15;
+}
+
+.notfound-page h1 span{
+    color:#e4c56f;
+}
+
+.nf-description{
+    margin:28px auto;
+    max-width:620px;
+    color:#c0cdc2;
+    line-height:1.9;
+    font-size:17px;
+}
+
+.nf-buttons{
+    display:flex;
+    justify-content:center;
+    gap:18px;
+    flex-wrap:wrap;
+}
+
+.nf-primary,
+.nf-secondary{
+    min-width:180px;
+    height:54px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    text-decoration:none;
+    font-weight:700;
+    letter-spacing:.8px;
+    transition:.3s;
+}
+
+.nf-primary{
+    background:#c9a44b;
+    color:#07110b;
+    border:1px solid #c9a44b;
+}
+
+.nf-primary:hover{
+    background:transparent;
+    color:#e4c56f;
+}
+
+.nf-secondary{
+    border:1px solid rgba(201,164,75,.6);
+    color:#e4c56f;
+}
+
+.nf-secondary:hover{
+    background:#c9a44b;
+    color:#07110b;
+}
+
+@media(max-width:768px){
+
+.nf-code{
+    font-size:120px;
+}
+
+.notfound-page h1{
+    font-size:38px;
+}
+
+.nf-description{
+    font-size:15px;
+}
+
+.nf-buttons{
+    flex-direction:column;
+}
+
+.nf-primary,
+.nf-secondary{
+    width:100%;
+}
+
+}

@@ -9,6 +9,7 @@ import Downloads from "../pages/Downloads/Downloads";
 import News from "../pages/News/News";
 import Contact from "../pages/Contact/Contact";
 import Compliance from "../pages/Compliance/Compliance";
+import NotFound from "../pages/NotFound/NotFound";
 
 function Router() {
   return (
@@ -23,6 +24,7 @@ function Router() {
         <Route path="/news" element={<News />} />
         <Route path="/contact" element={<Contact />} />
         <Route path="/compliance" element={<Compliance />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
